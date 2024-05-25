@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+Cadastro de clientes
+
+{% endblock %}
+
+{% block body %}
+<div class="container-fluid mt-3">
+    <div class="col">
+    <div class="col ">
+<h4  style="color:white; padding:5px; border-radius: 5px; background-color:Gray;">Aplicação para cadastro e gerenciamento de clientes</h4>
+    </div>
+    </div>
+</div>
+<div class="container-fluid mt-3">
+  <div class="row">
+    <div class="col">
+      <a href="{{ url_for('register') }}" style="text-decoration:none;"><img src="{{ url_for('static', filename='/assets/icone_contato.png') }}" alt="Logo" class="img-thumbnail rounded float-start"></a>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+</div>
+{% endblock %}
